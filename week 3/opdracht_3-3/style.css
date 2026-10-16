@@ -1,0 +1,19 @@
+thead{
+    background-color: #b0afeb;
+    color: white;
+}
+table{
+    border-collapse: collapse;
+}
+td:first-child{
+    background-color: #7371dc;
+}
+td{
+    background-color: black;
+}
+td{
+    color: white;
+}
+.border{
+    border-bottom-right-radius: 100px;
+}

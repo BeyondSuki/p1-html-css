@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.iets2 {
+    flex: 2;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.iets3 {
+    flex: 1;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+@media screen and (max-width: 450px) {
+ .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

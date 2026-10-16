@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+
+nav{
+    background-color: purple;
+}
+    ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    li{
+        list-style: none;
+        position: relative;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .drop-down{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: max-content;
+        background-color: purple;
+        padding: 20px;
+        border-radius: 0px 0px 15px 15px;
+        
+    }
+    li:hover .drop-down {
+        display: flex;
+    }
+}
