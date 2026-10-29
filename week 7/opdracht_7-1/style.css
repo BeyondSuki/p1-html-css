@@ -1,0 +1,139 @@
+* {
+    margin: 0px
+}
+
+/*desktop*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Logo {
+    background-color: red;
+    padding: 20px;
+    flex: 1;
+}
+
+.title-1 {
+    background-color: gold;
+    padding: 20px;
+    flex: 2;
+    .title-1 h2 {
+        font-weight: bold;
+    }
+}
+
+.title-2 {
+    background-color: orange;
+    padding: 20px;
+    flex: 2;
+    .title-2 h2 {
+        font-weight: bold;
+    }
+}
+
+.title-3 {
+    background-color: limegreen;
+    padding: 20px;
+    flex: 2;
+    .title-3 h2 {
+        font-weight: bold;
+    }
+}
+
+
+/*tablet*/
+@media screen and (max-width: 900px){
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Logo {
+    background-color: palevioletred;
+    padding: 20px;
+    flex: 1;
+}
+
+.title-1 {
+    background-color: red;
+    padding: 20px;
+    flex: 2;
+    .title-1 h2 {
+        font-weight: bold;
+    }
+}
+
+.title-2 {
+    background-color: cornflowerblue;
+    padding: 20px;
+    flex: 2;
+    .title-2 h2 {
+        font-weight: bold;
+    }
+}
+
+.title-3 {
+    background-color: blue;
+    padding: 20px;
+    flex: 2;
+    .title-3 h2 {
+        font-weight: bold;
+    }
+}
+
+}
+
+
+/*phone*/
+@media screen and (max-width: 670px){
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Logo {
+    background-color: teal;
+    padding: 20px;
+    flex: 1;
+}
+
+.cube {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin-top: -30px;
+    margin-left: auto;
+}
+
+.title-1 {
+    background-color: cyan;
+    padding: 20px;
+    flex: 2;
+    .title-1 h2 {
+        font-weight: bold;
+    }
+}
+
+.title-2 {
+    background-color: violet;
+    padding: 20px;
+    flex: 2;
+    .title-2 h2 {
+        font-weight: bold;
+    }
+}
+
+.title-3 {
+    background-color: darkslateblue;
+    padding: 20px;
+    flex: 2;
+    .title-3 h2 {
+        font-weight: bold;
+    }
+}
+
+}
