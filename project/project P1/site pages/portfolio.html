@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P1 Project</title>
+
+    <link rel="stylesheet" href="../site styles/portfolio.css">
+</head>
+
+<body>
+
+
+
+    <nav>
+
+        <div class="homepage">
+            <a href="../site pages/homepage.html">
+                <img src="../images/images.png" alt="homepage button image" class="school-logo">
+            </a>
+        </div>
+
+        <div class="navbar-links" id="mobile-menu">
+            <a href="../site pages/homepage.html">homepage</a>
+            <a href="../site pages/about-me.html">about me</a>
+            <a href="../site pages/portfolio.html" class="border-link">portfolio</a>
+            <a href="../site pages/interview.html">interview</a>
+            <a href="../site pages/contact.html">contact me</a>
+        </div>
+
+        <div class="buttons">
+            <button class="about-me"></button>
+            <button class="portfolio>"></button>
+            <button class="interview"></button>
+            <button class="contact-me"></button>
+        </div>
+
+    </nav>
+
+
+
+    <div class="title">
+        <hr>
+        <h1>Mijn Portfolio</h1>
+        <hr>
+    </div>
+
+
+
+    <div class="paragraph">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Error corrupti, assumenda eum culpa minus reprehenderit
+            perspiciatis qui, optio minima consequuntur corporis
+            voluptatem perferendis molestiae est architecto.
+            Nisi earum alias dicta.
+        </p>
+    </div>
+    <hr>
+
+    <img src="../images/mountains.jpeg" alt="picture of a mountainrange" class="mountains">
+
+    <img src="../images/sea-side.jpeg" alt="boy sitting sea side on a bunch of rocks" class="sea-side">
+
+
+
+    <div class="portfolio-row-container">
+
+        <img src="../images/sea-side.jpeg" alt="boy sitting sea side on a bunch of rocks" class="sea-side-mobile">
+
+        <div class="panorama-container">
+            <img src="../images/panorama.jpeg" alt="picture made inside a cave" class="panorama">
+        </div>
+
+    </div>
+
+    <div class="paragraph2">
+    </div>
+
+
+
+    <button onclick="open_hamburger()">
+        <img src="../images/hamburger.jpg" alt="menu button" class="hamburger">
+    </button>
+
+    <script>
+        function open_hamburger() {
+            document.getElementById("mobile-menu")
+                .classList.toggle("show-menu");
+        }
+    </script>
+
+</body>
+
+</html>

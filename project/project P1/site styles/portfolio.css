@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+
+nav {
+    background-color: darkgreen;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage {
+    margin-left: -40px;
+}
+
+.school-logo {
+    width: 100px;
+    max-height: 57px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+a {
+    margin-left: 40px;
+    padding: 15px;
+    color: white;
+}
+
+button {
+    display: none;
+}
+
+
+
+
+.title {
+    background-color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+
+
+
+.paragraph {
+    background-color: white;
+    width: calc(100% - 500px);
+    max-width: 650px;
+    min-width: 0;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+.paragraph p {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+.sea-side {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.sea-side-mobile {
+    display: none;
+}
+
+.panorama-container,
+.panorama {
+    display: none !important;
+}
+
+.mountains {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+.portfolio-row-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.panorama-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.panorama {
+    display: block;
+    transform: rotate(270deg);
+    width: 350px;
+    height: auto;
+}
+
+.paragraph2 {
+    width: 100%;
+}
+
+
+.border-link{
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 900px) {
+
+
+
+    .mountains,
+    .sea-side,
+    .sea-side-mobile,
+    .portfolio-row-container,
+    .panorama-container {
+        display: none;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: url("../images/panorama.jpeg") no-repeat center center;
+        background-size: cover;
+    }
+
+
+
+
+    .navbar-links {
+        display: none;
+    }
+
+    #mobile-menu.show-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        height: auto;
+        gap: 15px;
+        z-index: 10;
+    }
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #mobile-menu a:hover {
+        background-color: green;
+    }
+
+    button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        width: 50px;
+    }
+
+
+
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .paragraph {
+        width: 90%;
+        max-width: none;
+        margin: 20px auto;
+    }
+
+    .mountains,
+    .sea-side {
+        display: none;
+    }
+
+
+
+
+    .portfolio-row-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 901px) {
+
+    .portfolio-row-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+}

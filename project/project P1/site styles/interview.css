@@ -1,0 +1,154 @@
+html, body {
+  min-height: 100vh; 
+  overflow: auto;    
+}
+
+nav {
+    background-color: darkgreen;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.interview-P {
+    margin-top: 5px;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-right: 150px
+}
+
+.homepage {
+ margin-left: -40px;
+}
+
+a {
+    margin-left: 40px;
+    padding: 15px;
+    color: white;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    font-size: larger;
+}
+
+
+
+.school-logo {
+    width: 100px;
+    max-height: 57px;
+    flex-shrink: 0;
+}
+
+.hamburger {
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    margin: 0;
+
+}
+
+button {
+    display: none;
+}
+
+.border-link{
+    border: 1px solid white;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 900px) {
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .goldimg {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    #mobile-menu a {
+        margin: 0;
+        padding: 10px;
+    }
+
+    #mobile-menu.show-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        height: auto;   
+        gap: 15px;
+
+        position: absolute;
+        top: 65px;
+        right: 0;
+        z-index: 10;
+    }
+
+    button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .show-menu {
+        transform: translateX(0);
+        transition: all 2s
+    }
+
+    .buttons {
+        background-color: white;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .show-menu a:hover {
+        background-color: green;
+    }
+
+
+}   

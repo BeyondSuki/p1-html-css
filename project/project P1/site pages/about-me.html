@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../site styles/about-me.css">
+    <title>P1 Project</title>
+</head>
+
+<body>
+    <nav>
+        <div class="homepage">
+            <a href="../site pages/homepage.html">
+                <img src="../images/images.png" alt="" class="school-logo">
+            </a>
+        </div>
+
+        <div class="navbar-links" id="mobile-menu">
+            <a href="../site pages/homepage.html">homepage</a>
+            <a href="../site pages/about-me.html" class="border-link">about me</a>
+            <a href="../site pages/portfolio.html">portfolio</a>
+            <a href="../site pages/interview.html">interview</a>
+            <a href="../site pages/contact.html">contact me</a>
+        </div>
+        <div class="buttons">
+            <button class="about-me"></button>
+            <button class="portfolio>"></button>
+            <button class="interview"></button>
+            <button class="contact-me"></button>
+        </div>
+    </nav>
+
+    <h1>About me</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsa corrupti, error, necessitatibus
+        repudiandae facere nisi dolorum adipisci similique quisquam molestias obcaecati et quod saepe fuga quo maxime
+        illo. Eveniet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eos qui laborum vel corporis!
+        Id culpa consequatur ratione neque harum tenetur optio. Laboriosam corrupti deserunt sequi voluptatum dolor ea
+        necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi aperiam perspiciatis qui
+        cum autem ea atque quaerat adipisci nam obcaecati soluta, nobis, molestias consequatur aliquam ducimus nostrum
+        ipsa ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, distinctio voluptatibus omnis
+        quas, debitis corporis nostrum quo architecto iusto reprehenderit obcaecati cum earum sequi velit dignissimos in
+        eius quaerat iste!</p>
+    <br>
+    <h2>Fav youtuber:</h2>
+    <a href="https://youtu.be/ep_47xD82IA" class="yt">www.youtube.com</a>
+
+    <hr>
+
+
+    <img src="../images/monster-energy.webp" alt="monster energy cans" class="monster-energy">
+
+
+
+    <button onclick="open_hamburger()">
+        <img src="../images/hamburger.jpg" alt="menu button" class="hamburger">
+    </button>
+
+    <script>
+        function open_hamburger() {
+            document.getElementById("mobile-menu").classList.toggle("show-menu");
+        }
+    </script>
+</body>
+
+</html>

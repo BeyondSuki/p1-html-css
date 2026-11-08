@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../site styles/contact.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="homepage">
+            <a href="../site pages/homepage.html">
+                <img src="../images/images.png" alt="" class="school-logo">
+            </a>
+        </div>
+
+        <div class="navbar-links" id="mobile-menu">
+            <a href="../site pages/homepage.html">homepage</a>
+            <a href="../site pages/about-me.html">about me</a>
+            <a href="../site pages/portfolio.html">portfolio</a>
+            <a href="../site pages/interview.html">interview</a>
+            <a href="../site pages/contact.html" class="border-link">contact me</a>
+        </div>
+
+        <div class="buttons">
+            <button class="about-me"></button>
+            <button class="portfolio>"></button>
+            <button class="interview"></button>
+            <button class="contact-me"></button>
+        </div>
+    </nav>
+
+    <hr>
+    <h1>Contact me</h1>
+    <hr>
+    <form class="labelhr">
+        <label for="first-name">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="last-name">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+        <label for="email">Your email:</label><br>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <a href="https://github.com/BeyondSuki?tab=repositories">
+        <img src="../images/github.png" alt="github" class="github">
+    </a>
+
+    
+
+    <h4>mijn mail:
+        <a href="mailto: 9029330@student.zadkine.nl" class="mail">hier</a>
+    </h4>
+
+
+    <button onclick="open_hamburger()">
+        <img src="../images/hamburger.jpg" alt="menu button" class="hamburger">
+    </button>
+
+    <script>
+        function open_hamburger() {
+            document.getElementById("mobile-menu").classList.toggle("show-menu");
+        }
+    </script>
+
+</body>
+
+</html>
