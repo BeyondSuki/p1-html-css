@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../site styles"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "site pages"
+	}
+}
